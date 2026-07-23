@@ -1,0 +1,167 @@
+main{
+    margin: 30px 20px;
+}
+
+h3.subtitulos{
+    color: #f8fafc;
+    font-family: "Poppins Bold", helvetica, verdana;
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+div#container-hab-tecnicas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+div.box-tecnicas{
+    justify-self: center;
+    padding: 10px 20px 30px 20px;
+    background: #1e293b;
+    border-radius: 23px;
+    min-width: 280px;
+    max-width: 420px;
+}
+
+h5.titulo-box-tecnicas{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #3b82f6;
+    margin: 10px 0px 30px;
+}
+
+div.contenido-hab-tecn{
+    margin-left: 10px ;
+}
+
+div.hab-list{
+    display: grid;
+    grid-template-columns: 68px 100px 80px;
+    gap: 15px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.hab-list p{
+    font-size: 15px;
+    color: #ffffffBA;
+}
+
+.hab-list progress{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100px;
+    height: 7px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.hab-list progress::-webkit-progress-bar{
+    background-color: #0a3c4c;
+}
+
+.hab-list progress::-webkit-progress-value{
+    background-color: #06b6d4;
+    border-radius: 100px;
+}
+
+.hab-list progress::-moz-progress-bar{
+    background-color: #06b6d4;
+    border-radius: 100px;
+}
+
+.hab-list p.porcentaje{
+    font-size: 10px;
+}
+
+div#container-hab-personales{
+    padding: 2vh 7%;
+    background: #1e293b;
+    border-radius: 23px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5vw;
+}
+
+div#container-hab-personales li{
+    list-style: none;
+    padding: 20px 0px;
+    justify-self: center;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background: linear-gradient(90deg, #3b82f6, #06b6d4);
+    border-radius: 100px;
+}
+
+@media (min-width: 1024px) {
+    main{
+        margin: 40px 50px;
+    }
+
+    h3.subtitulos{
+        font-size: 25pt;
+        margin-bottom: 35px;
+        margin-top: 45px;
+    }
+
+    div#container-hab-tecnicas{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vw;
+    }
+
+    div.box-tecnicas{
+        padding: 20px 30px 40px 30px;
+        min-width: 38vw;
+    }
+
+    h5.titulo-box-tecnicas{
+        font-size: 1.8vw;
+        margin: 20px 0px 40px;
+    }
+
+    div.contenido-hab-tecn{
+        margin-left: 1.5vw;
+    }
+
+    div#hab-list-db{
+        position: relative;
+        top: 15%;
+    }
+
+    div.hab-list{
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 2vw;
+        margin-bottom: 20px;
+    }
+
+    .hab-list p{
+        font-size: 1.5vw;
+    }
+
+    .hab-list progress{
+        width: 20vw;
+        height: 9px;
+    }
+
+    .hab-list p.porcentaje{
+        font-size: .8vw;
+    }
+
+    div#container-hab-personales{
+        padding: 3vw 4vw;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    div#container-hab-personales li{
+        padding: 2vw;
+        width: 20vw;
+        text-align: center;
+        font-size: 15pt;
+    }
+}

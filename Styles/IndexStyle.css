@@ -1,0 +1,394 @@
+
+main{
+    margin: 30px 25px;
+}
+
+div#perfil{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+p#bienvenida{
+    color: #3b82f6;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+h2#nombre-completo{
+    font-family: "Poppins Bold", helvetica, verdana;
+    font-size: 36px;
+}
+
+span#apellidos{
+    color: #3b82f6;
+    font-family: "Poppins Bold", helvetica, verdana;
+}
+
+p#estado{
+    font-size: 17px;
+    color: #94a3b8;
+    margin-top: 15px;
+}
+
+p#descripcion-personal{
+    color: #FFFFFF80;
+    font-size: 15px;
+    margin: 30px 0px;
+    line-height: 1.4;
+    width: 100%;
+}
+div#botones{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+button#btn-proyectos{
+    background: #06b6d4;
+    padding: 15px 30px;
+    border-radius: 46px;
+    color: #f8fafc;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+button#btn-contactar{
+    background: #f8fafc;
+    padding: 15px 30px;
+    border-radius: 46px;
+    color: #06b6d4;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+div#perfil-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img#img-perfil{
+    width: 75vw;
+    border-radius: 100%;
+    border: 4px solid #3b82f6;
+    box-shadow: 0px 0px 20px 5px #3b82f6;
+}
+
+#img-ucompensar{
+    width: 75vw;
+    background: #f8fafc;
+    padding: 8.5px;
+    border-radius: 50px;
+    position: relative;
+    top: -20px;
+    box-shadow: 0px 0px 20px 8px #3b82f6;
+    margin-bottom: 20px;
+}
+
+h3.Subtitulos{
+    color: #f8fafc;
+    font-family: "Poppins Bold", helvetica, verdana;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+div#list-stacks{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    align-items: baseline;
+    margin-bottom: 40px;
+}
+
+.caja-stack{
+    padding: 20px 10px;
+    background-color: #1e293b;
+    border-radius: 11px;
+}
+
+.caja-stack img{
+    display: block;
+    height: 53px;
+    margin: auto;
+}
+
+#img-xampp{
+    border-radius: 8px;
+}
+
+.caja-stack legend, legend span{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-top: 7px;
+    font-weight: bold;
+}
+
+#java{
+    color: #db380e;
+}
+
+#spring{
+    color: #7ed957;
+}
+
+#spring #boot{
+    display: block;
+    margin-top: 0px;
+}
+
+#cajaSpringBoot{
+    padding: 13px 10px;
+    position: relative;
+    top: -7px;
+}
+
+#js{
+    color: #ffde59;
+}
+
+#html{
+    color: #ff4949;
+}
+
+#css{
+    color: #3b82f6;
+}
+
+#heidisql{
+    color: #fff;
+}
+
+#c-sharp{
+    color: #a512ff;
+}
+
+#git{
+    color: #f64e29;
+}
+
+#github{
+    color: #fff;
+}
+
+#xampp{
+    color: #fff;
+}
+
+div#container-conocimientos{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    margin: 30px 20px;
+}
+
+div.caja-conocimiento{
+    padding: 20px;
+    background-color: #1e293b;
+    border-radius: 11px;
+}
+
+div.encabezados{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 35px 10px 5px;
+}
+
+h5.titulos-conocimientos{
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    width: 55%;
+}
+
+.encabezados .imgs-encabezado{
+    height: 57px;
+}
+
+p.desc-conocimientos{
+    font-size: 15px;
+    color: #94a3b8;
+    padding-right: 15px;
+    margin: 15px auto;
+}
+
+#ides-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 15px 0px 25px 15px;
+    gap: 20px;
+    align-items: center;
+}
+
+.caja-ides{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.caja-ides img{
+    width: 75px;
+    background-color: #1e293b;
+    padding: 15px;
+    border-radius: 11px;
+}
+
+.caja-ides p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+@media (min-width: 1024px) {
+
+    main{
+        margin: 68px 72px;
+    }
+
+    div#perfil{
+        gap: 100px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-right: 50px;
+        align-items: center;
+    }
+    p#bienvenida{
+        font-size: 22px;
+        margin: 0px;
+        line-height: 1.4;
+    }    
+
+    h2#nombre-completo{
+        font-size: 43px;
+        line-height: 1.4;
+        margin: 0px;
+    }
+    
+    p#estado{
+        font-size: 20px;
+        margin: 0px;
+        line-height: 1.4;
+    }
+
+    p#descripcion-personal{
+        font-size: 19px;
+        margin: 30px 0px;
+        line-height: 1.4;
+        width: 40vw;
+    }
+
+    div#botones{
+        gap: 29px;
+        margin-bottom: 63px;
+    }
+
+    button#btn-proyectos{
+        padding: 18px 29px;
+        border-radius: 29px;
+        font-size: 19px;
+    }
+
+    button#btn-contactar{
+        padding: 18px 29px;
+        border-radius: 29px;
+        font-size: 19px;
+    }
+
+    img#img-perfil{
+        width: 20vw;
+        border: 4px solid #3b82f6;
+    }
+
+    #img-ucompensar{
+        width: 30vw;
+    }
+
+    h3.Subtitulos{
+        font-size: 30px;
+    }
+
+    div#list-stacks{
+        grid-template-columns: repeat(8, 1fr);
+        gap: 20px;
+        margin-left: 40px;
+    }
+
+    .caja-stack{
+        padding: 14px 7px 22px;
+    }
+
+    .caja-stack img{
+        height: 71px;
+    }
+
+    .caja-stack legend, legend span{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    #spring #boot{
+        line-height: 1;
+    }
+
+    #cajaSpringBoot{
+        padding: 9px 7px;
+    }
+
+    div#container-conocimientos{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-left: 40px;
+    }
+
+    div.caja-conocimiento{
+        padding: 35px 30px;
+    }
+
+    div.encabezados{
+        margin: 15px 40px 15px 10px;
+    }
+
+    h5.titulos-conocimientos{
+        font-size: 21px;
+    }
+
+    .encabezados .imgs-encabezado{
+        height: 63px;
+    }
+
+    p.desc-conocimientos{
+        font-size: 19px;
+        width: 90%;
+    }
+
+    #ides-container{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px 25px;
+        gap: 30px;
+        margin-left: 40px;
+    }
+
+    .caja-ides{
+        grid-template-columns: 150px calc(100% - 150px);
+        gap: 30px;
+    }
+
+    .caja-ides img{
+        width: 85px;
+        padding: 20px;
+    }
+
+    .caja-ides p{
+        font-size: 15pt;
+    }
+}

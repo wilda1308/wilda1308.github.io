@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Portafolio | Proyectos</title>
+        <link rel="icon" href="../Assets/Images/svg/IsologotipoDavid.svg">
+        <link rel="stylesheet" href="../Styles/style.css">
+        <link rel="stylesheet" href="../Styles/proyectos.css">
+    </head>
+    <body>
+        <header id = "encabezado">
+            <a href="../Index.html">
+                <div class = "logotipo">
+                    <div class = "logo">
+                        <img src="../Assets/Images/svg/IsologotipoDavid.svg" alt="Isologotipo de Wilson David Monroy" class = "isologotipo" loading="lazy">
+                    </div>
+                    <div class = "name-slogan">
+                        <h1 class = "name">WilsonM <span class = "resaltar-name">| dev</span></h1>
+                        <h5 class = "slogan">Web & Software Developer</h5>
+                    </div>
+                </div>
+            </a>
+            <div id = "btn-abrir-menu"></div>
+            <nav id = "menu-nav" class = "ocultar-menu">
+                <ul class = "menu">
+                    <li><a href="sobre_mi.html" >Sobre mí</a></li>
+                    <li><a href="habilidades.html" >Habilidades</a></li>
+                    <li><a href="proyectos.html" id = "estado_act">Proyectos</a></li>
+                    <li><a href="#footer-index">Contacto</a></li>
+                    <a href = "/Assets/documents/WILSON_DAVID_MONROY_RAMIREZ_HV.pdf" download = "WILSON_DAVID_MONROY_RAMIREZ_HV.pdf">
+                        <button class = "btn-cv">Descargar CV</button>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id = "encabezado-proyectos">
+                <div>
+                    <p id = "info_pag">Portafolio</p>
+                    <h3 id = "titulo_pag">Mis proyectos</h3>
+                </div>
+                <p id = "btn-collapse">Collapsar todo</p>
+            </div>
+            <section>
+                <div id = "container-proyectos">
+                    <details class="box-proyecto">
+                        <summary class = "header-proyecto">
+                            <img src="../Assets/Images/png/ARON.png" alt="Aron el renacer del mundo perdido" class = "icon-proyecto" loading="lazy">
+                            <div class = "resumen">
+                                <h5>Aron el renacer del mundo perdido</h5>
+                                <p>VideoJuego • Gdevelop • Lógica de programación</p>
+                            </div>
+                            <div class = "estado">
+                                <img src="../Assets/Images/svg/chulo.svg" alt="Icono de completado" loading="lazy">
+                                <p>Completado</p>
+                            </div>
+                            <img id="flecha" src="../Assets/Images/svg/details-abierto.svg" loading="lazy">
+                        </summary>
+                        <div class = "contenido-proyecto">
+                            <h6>Descripción del proyecto</h6>
+                            <p>Videojuego realizado con la plataforma de GDevelop, implementando lógica de programación básica y eventos de colisión, clics entre otros eventos. El juego cuenta con tres niveles en los cuales el primer nivel consiste en llegar al portal para continuar con el siguiente nivel, el segundo se desbloquea pasando el primero y en este nivel hay que eliminar un total de 25 robots para desbloquear el portal al siguiente nivel. Y por último tenemos el nivel final con el Boss del videojuego donde al derrotarlo gana el juego.</p>
+                            <div class = "contenido-add-proyectos">
+                                <div class = "aplicado">
+                                    <h6>Lo aplicado</h6>
+                                    <p>Se aplicó lógica de programación, incluyendo condicionales, bucles y código básico con lenguaje natural en GDevelop. Trabajo en equipo.</p>
+                                </div>
+                                <div class = "acciones">
+                                    <h6>Acciones</h6>
+                                    <p>Se desarrollo el videojuego y toda la lógica que debía tener en la plataforma de GDevelop y luego se publicó a la web en Itch.io, el cual permite publicar esta clase de proyectos.</p>
+                                </div>
+                            </div>
+                            <div class="herramientas">
+                                <p id = "gdevelop">Gdevelop</p>
+                                <p id = "pixilart">Pixil Art</p>
+                                <a href = "https://wildavmon.itch.io/aron-el-renacer-del-mundo-perdido" id = "itchio">Itch.io</a>
+                            </div>
+                            <div class = "container-ver-proyecto">
+                                <iframe src="https://itch.io/embed-upload/18363731?color=3b82f6"  allowfullscreen="" scrolling = "no" id = "pantalla-juego"></iframe>
+                            </div>  
+                        </div>
+                    </details>
+                    <details class="box-proyecto">
+                        <summary class = "header-proyecto">
+                            <img src="../Assets/Images/svg/IconoCalculadora.svg" alt="Calculadora Logo" class = "icon-proyecto" id = "icono-calculator" loading="lazy">
+                            <div class = "resumen">
+                                <h5>Calculadora</h5>
+                                <p>Programa de calculadora • Windows Forms • C#</p>
+                            </div>
+                            <div class = "estado">
+                                <img src="../Assets/Images/svg/chulo.svg" alt="Icono de completado" loading="lazy">
+                                <p>Completado</p>
+                            </div>
+                            <img id="flecha" src="../Assets/Images/svg/details-abierto.svg" loading="lazy">
+                        </summary>
+                        <div class = "contenido-proyecto">
+                            <h6>Descripción del proyecto</h6>
+                            <p>Programa de calculadora realizado en C# con la herramienta de interfaz intuitiva de windows forms. El programa permite hacer procesos largos hasta un limite de cifras de un número, permitiendo el calculo rápido de operaciones básicas y sencillas de la vida cotidiana. Este prigramaquedó unicamente en desarrollo y pruebas sencillas de funcionalidad.</p>
+                            <div class = "contenido-add-proyectos">
+                                <div class = "aplicado">
+                                    <h6>Lo aplicado</h6>
+                                    <p>Lógica de programación al realizar una acción o al escribir, agregando eventos a botones como sumar, restar, multiplicar, dividir, potenciar, etc. También el manejo de excepciones con try-catch.</p>
+                                </div>
+                                <div class = "acciones">
+                                    <h6>Acciones</h6>
+                                    <p>Se desarrollo el programa en Visual Studio 2022, en el lenguaje de programación de C# con la herramienta de Windows Forms y luego se subió el proyecto a GitHub.</p>
+                                </div>
+                            </div>
+                            <div class="herramientas">
+                                <p class = "c-sharp">C#</p>
+                                <p class = "visual-studio">Visual Studio</p>
+                                <a href="https://github.com/wilda1308/Calculadora_C_sharp" class = "github negro">GitHub</a>
+                            </div>
+                            <div class = "container-ver-proyecto">
+                                <img src="../Assets/Images/png/preview-calculadora.png"class = "pantalla-preview" loading="lazy">   
+                            </div>
+                            <div class = "container-btn-ver-proyecto">
+                                <a href="https://github.com/wilda1308/Calculadora_C_sharp/blob/main/Calculadora/Calculadora/bin/Debug/Calculadora.exe" class="btn-ver-proyecto">Ver proyecto</a>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="box-proyecto">
+                        <summary class = "header-proyecto">
+                            <img src="../Assets/Images/svg/icon_sistema_ventas.svg" alt="Sistema Historial Ventas Pantalones Logo" class = "icon-proyecto" id = "icono-sistema-ventas" loading="lazy">
+                            <div class="resumen">
+                                <h5>Sistema Historial Ventas Pantalones</h5>
+                                <p>Programa de Historial ventas • Windows Forms • C#</p>
+                            </div>
+                            <div class = "estado">
+                                <img src="../Assets/Images/svg/chulo.svg" alt="Icono de completado" loading="lazy">
+                                <p>Completado</p>
+                            </div>
+                            <img id="flecha" src="../Assets/Images/svg/details-abierto.svg" loading="lazy">
+                        </summary>
+                        <div class = "contenido-proyecto">
+                            <h6>Descripción del proyecto</h6>
+                            <p>Aplicación de escritorio para registrar y gestionar ventas de pantalones (talla, tela, color, género, precio y cantidad), construida en C# (.NET Framework 4.7.2) con Windows Forms.
+                            Este proyecto fue desarrollado como proyecto final académico y permite registrar nuevas ventas, visualizar el historial completo, editar o eliminar registros, y obtener estadísticas básicas como la ganancia total, la tela más vendida y el color más vendido. Este proyecto se hizo pensando en negocios locales para mejorar el proceso de venta en el día a día y dando estádisticas de lo vendido para comprar mercancía según las tendencias.</p>
+                            <div class = "contenido-add-proyectos">
+                                <div class="aplicado">
+                                    <h6>Lo aplicado</h6>
+                                    <p>Lógica de programación al realizar una acción en un botón, registro de ventas de pantalones por medio de labels (formulario) y visualización del historial, los datos almacenados no son percistentes.</p>
+                                </div>
+                                <div class = "acciones">
+                                    <h6>Acciones</h6>
+                                    <p>Se desarrollo el programa en Visual Studio 2022, en el lenguaje de programación de C# con la herramienta de Windows Forms y luego se subió el proyecto a GitHub con su respectivo ejecutable.</p>
+                                </div>
+                            </div>
+                            <div class="herramientas">
+                                <p class = "c-sharp">C#</p>
+                                <p class = "visual-studio">Visual Studio</p>
+                                <a href = "https://github.com/wilda1308/SistemaHistorialVentasPantalones" class = "github negro">GitHub</a>
+                            </div>
+                            <div class = "container-ver-proyecto" id = "container-ver-proyecto-sistema">
+                                <img src="../Assets/Images/png/home_sistema_ventas.png"class = "pantalla-preview" loading="lazy">
+                            </div>
+                            <div class="container-btn-ver-proyecto">
+                                <a href = "https://github.com/wilda1308/SistemaHistorialVentasPantalones/blob/main/SistemaHistorialVentasProyectoFinal.exe" class="btn-ver-proyecto">Ver proyecto</a>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="box-proyecto">
+                        <summary class = "header-proyecto">
+                            <img src="../Assets/Images/png/safemoney_logo.png" alt="SafeMoney Logo" class = "icon-proyecto" id = "icono-safemoney" loading="lazy">
+                            <div class="resumen">
+                                <h5>SafeMoney</h5>
+                                <p>Programa Desktop • Java • POO</p>
+                            </div>
+                            <div class = "estado">
+                                <img src="../Assets/Images/svg/chulo.svg" alt="Icono de completado" loading="lazy">
+                                <p>Completado</p>
+                            </div>
+                            <img id="flecha" src="../Assets/Images/svg/details-abierto.svg" loading="lazy">
+                        </summary>
+                        <div class = "contenido-proyecto">
+                            <h6>Descripción del proyecto</h6>
+                            <p>Proyecto que se enfoca en poder administrar bolsillos de usuarios para que administren y separen sus ingresos por categorías, permitiendo gestionar el dinero destinados a Servicios, gastos fijos, gastos hormiga, y ahorros fijos. Este proyecto nace de la necesidad de que las personas no saben suministrar muy bien sus ingresos, por ejemplo llega fin de mes y la plata no les alcanza para cosas básicas, haciendo que recurran a prestamos o deudas. Desarrollo de un sistema que permita iniciar sesión, registrarse y administrar diferentes bolsillos en los cuales se podrá destinar el dinero a bolsillos en especifico clasificando todos los ingresos.</p>
+                            <div class = "contenido-add-proyectos">
+                                <div class = "aplicado">
+                                    <h6>Lo aplicado</h6>
+                                    <p>La mayoria de conceptos de Programación Orientada a Objetos, la utilización de libreria Java Swing, lógica de programación para iniciar sesión, validaciones sencillas de campos.</p>
+                                </div>
+                                <div class = "acciones">
+                                    <h6>Acciones</h6>
+                                    <p>Desarrollo en herramienta intuitiva de Java Swing, lógica del negocio con el lenguaje de programación Java en el entorno de desarrollo IDE Apache NetBeans, subir proyecto a GitHub.</p>
+                                </div>
+                            </div>
+                            <div class = "herramientas">
+                                <p class = "java">Java</p>
+                                <p class = "netBeans">NetBeans</p>
+                                <a href = "https://github.com/wilda1308/SafeMoney" class = "github negro">Git Hub</a>
+                            </div>
+                            <div class = "container-ver-proyecto" id="container-ver-proyecto-safemoney">
+                                <img src="../Assets/Images/png/principal_safemoney.png" class = "pantalla-preview" loading="lazy">
+                            </div>
+                            <div class = "container-btn-ver-proyecto">
+                                <a href = "https://github.com/wilda1308/SafeMoney/tree/main/Release" class="btn-ver-proyecto">Ver proyecto</a>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="box-proyecto">
+                        <summary class = "header-proyecto">
+                            <img src="../Assets/Images/svg/IconKickData.svg" alt="KickData Logo" class = "icon-proyecto" id = "icon-kickData" loading="lazy">
+                            <div class="resumen">
+                                <h5>KickData</h5>
+                                <p>Página web • Estructure • HTML • CSS • JavaScript</p>
+                            </div>
+                            <div class = "estado">
+                                <img src="../Assets/Images/svg/chulo.svg" alt="Icono de completado" loading="lazy">
+                                <p>Completado</p>
+                            </div>
+                            <img id="flecha" src="../Assets/Images/svg/details-abierto.svg" loading="lazy">
+                        </summary>
+                        <div class = "contenido-proyecto">
+                            <h6>Descripción del proyecto</h6>
+                            <p>Desarrollo de estructura, visualización y estilos de página web. Esta página web se trata de visualizar datos, estadísticas y resultados mas importantes de los torneos más ambiciosos del fútbol masculino desde sus inicios hasta la actualidad. Está página web resalta la estructuración básica de una pagina web y la estilización para diferentes aspectos.</p>
+                            <div class = "contenido-add-proyectos">
+                                <div class = "aplicado">
+                                    <h6>Lo aplicado</h6>
+                                    <p>Se aplico la estructura básica de HTML para formalizar el contenido de página web, la estilización con CSS para darle un toque de personalidad al sitio y lógica del lenguaje de JavaScript para el manejo de una API sencilla en el mundial actual</p>
+                                </div>
+                                <div class = "acciones">
+                                    <h6>Acciones</h6>
+                                    <p>Se desarrollo el programa en Visual Studio Code, en el lenguaje de programación de JavaScript junto con los lenguajes de marcado HTML y de estilos CSS y luego se subió el proyecto a GitHub.</p>
+                                </div>
+                            </div>
+                            <div class = "herramientas">
+                                <p class = "html">HTML</p>
+                                <p class = "css">CSS</p>
+                                <p class = "vscode">VS Code</p>
+                                <p class = "js negro">Java Script</p>
+                                <a href = "https://github.com/wilda1308/KickData" class = "github negro">Git Hub</a>
+                            </div>
+                            <div class = "container-ver-proyecto-web">
+                                <iframe src="https://wilda1308.github.io/KickData" class = "pantalla-preview"></iframe>  
+                            </div>
+                            <div class = "container-btn-ver-proyecto">
+                                <a href="https://wilda1308.github.io/KickData/" target = "_blank" class="btn-ver-proyecto">Ver proyecto</a>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="box-proyecto">
+                        <summary class = "header-proyecto">
+                            <img src="../Assets/Images/svg/LogoJJConsulting.svg" alt="JJConsulting Logo" class = "icon-proyecto" loading="lazy">
+                            <div class="resumen">
+                                <h5>JJConsulting</h5>
+                                <p>Página web • Frontend y Backend• HTML • CSS • JavaScript</p>
+                            </div>
+                            <div class = "estado">
+                                <img src="../Assets/Images/svg/chulo.svg" alt="Icono de completado" loading="lazy">
+                                <p>Completado</p>
+                            </div>
+                            <img id="flecha" src="../Assets/Images/svg/details-abierto.svg" loading="lazy">
+                        </summary>
+                        <div class = "contenido-proyecto">
+                            <h6>Descripción del proyecto</h6>
+                            <p>Practica profesional en técnico profesional de desarrollo de aplicaciones de software en la empresa de Asesorías Contables y Administrativas JJ S.A.S. Desarrollo de página web totalmente personalizable a medida, con formulario funcional con almacenamiento de base de datos, estructura de página web y estilización. Contiene una estructura de Frontend y backend por aparte y base de datos gratuita en Neon.tech. El Frontend está alojado en Vercel y el Backend enRailway.</p>
+                            <div class = "contenido-add-proyectos">
+                                <div class = "aplicado">
+                                    <h6>Lo aplicado</h6>
+                                    <p>Se aplicó conocimientos en backend con SpringBoot utilizando el Modelo Vista Controlador para el manejo de datos que se ingresan en el Frontend. Por otro lado la estructuración y estilización basica con HTML y CSS, junto con la lógica de JavaScript para validar datos. Por otro lado el uso de diferentes herramientas como por ejemplo Inkscape (para la vectorización de figuras), Vercel (alojamiento web estatico), Render (alojamiento web backend) y Neon.tech (Alojamiento web de base de datos).</p>
+                                </div>
+                                <div class = "acciones">
+                                    <h6>Acciones</h6>
+                                    <p>Se desarrollo el Backend en Java con la dependencia de SpringBoot para conectar y almacenar los datos más facil y rapida en IntelliJ IDEA. Por otro lado se continuó con el Frontend desarrollandolo en Visual Studio Code con HTML, CSS y JavaScript. Por último, se alojo cada herramienta o sección del código como servicio en la nube para utilizar y unificar la página web. Luego para el Frontend y el backend los subí al repositorio de GitHub en privado para que cada proveedor de alojamiento leyera el contenido sin tener que ponerlo publico.</p>
+                                </div>
+                            </div>
+                            <div class = "herramientas">
+                                <p class = "java">Java</p>
+                                <p id = "springboot">Spring Boot</p>
+                                <p class = "html">HTML</p>
+                                <p class = "css">CSS</p>
+                                <p class = "js negro">JavaScript</p>
+                                <p class = "vscode">VS Code</p>
+                                <p id = "intellijidea">IntelliJ IDEA</p>
+                                <p id = "vercel" class = "negro">Vercel</p>
+                                <p id = "neontech">Neon.tech</p>
+                                <p id = "render" class = "negro">Render</p>
+                                <a href="https://github.com/orgs/JJ-Consulting-Group/repositories" class = "github negro">Git Hub</a>
+                            </div>
+                            <div class = "container-ver-proyecto-web">
+                                <iframe src="https://pagina-web-jj-consulting.vercel.app"class = "pantalla-preview" id = "pantalla-preview-jjconsulting"></iframe>  
+                            </div>
+                            <div class = "container-btn-ver-proyecto">
+                                <a href="https://pagina-web-jj-consulting.vercel.app/" target = "_blank" class="btn-ver-proyecto">Ver proyecto</a>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </section>
+        </main>
+        <footer id = "footer-index">
+            <div class = "logotipo">
+                <div class = "logo">
+                    <img src="../Assets/Images/svg/IsologotipoDavid.svg" alt="Isologotipo de Wilson David Monroy" class = "isologotipo" loading="lazy">
+                </div>
+                <div class = "name-slogan">
+                    <h1 class = "name">WilsonM <span class = "resaltar-name">| dev</span></h1>
+                    <h5 class = "slogan">Web & Software Developer</h5>
+                </div>
+            </div>
+            <div class = "contactos">
+                <div>
+                    <h3 class = "tittle-contacto">Puedes contactarme en:</h3>
+                    <div class = "contacto-info">
+                        <a href = "tel:+573028436977" class = "caja-info">
+                            <h6 class = "tittle-caja-info">Teléfono:</h6>
+                            <p class = "info-contacto">(+57) 302 843 6977</p>
+                        </a>
+                        <a href = "mailto:wilsondmonroy@gmail.com" class = "caja-info">
+                            <h6 class = "tittle-caja-info">Correo electrónico:</h6>
+                            <p class = "info-contacto">wilsondmonroy@gmail.com</p>
+                        </a>
+                        <a href = "mailto:wdmonroy@ucompensar.edu.co" class = "caja-info">
+                            <h6 class = "tittle-caja-info">Correo Institucional:</h6>
+                            <p class = "info-contacto">wdmonroy@ucompensar.edu.co</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class = "derechos-container">
+                <p class = "info-derechos">&copy Wilson David Monroy Ramirez 2026. Todos los derechos reservados.</p>
+            </div>
+            <div class = "redes-sociales">
+                <h3 class = "tittle-contacto">Redes Sociales:</h3>
+                <div class = "container-redes">
+                    <a href="https://www.linkedin.com/in/wilsondmonroy" target="_blank" class = "caja-redes">
+                        <img src="../Assets/Images/png/linkedIn_white.png" alt="LinkedIn" class = "iconos-redes" loading="lazy">
+                        <p class = "info-redes">www.linkedin.com/in/wilsondmonroy</p>
+                    </a>
+                    <a href="https://github.com/wilda1308" target="_blank" class = "caja-redes">
+                        <img src="../Assets/Images/png/github.png" alt="GitHub" class = "iconos-redes" loading="lazy">
+                        <p class = "info-redes">WilsondMonroyDev</p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="../JavaScript/script.js"></script>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Portafolio</title>
+        <link rel="icon" href="Assets/Images/svg/IsologotipoDavid.svg">
+        <link rel="stylesheet" href = "Styles/style.css">
+        <link rel="stylesheet" href="Styles/IndexStyle.css">
+
+    </head>
+    <body>
+        <header id = "encabezado">
+            <a href="Index.html">
+                <div class = "logotipo">
+                    <div class = "logo">
+                        <img src="Assets/Images/svg/IsologotipoDavid.svg" alt="Isologotipo de Wilson David Monroy" class = "isologotipo">
+                    </div>
+                    <div class = "name-slogan">
+                        <h1 class = "name">WilsonM <span class = "resaltar-name">| dev</span></h1>
+                        <h5 class = "slogan">Web & Software Developer</h5>
+                    </div>
+                </div>
+            </a>
+            <div id = "btn-abrir-menu"></div>
+            <nav id = "menu-nav" class = "ocultar-menu">
+                <ul class = "menu">
+                    <li><a href="pages/sobre_mi.html">Sobre mí</a></li>
+                    <li><a href="pages/habilidades.html">Habilidades</a></li>
+                    <li><a href="pages/proyectos.html">Proyectos</a></li>
+                    <li><a href="#footer-index">Contacto</a></li>
+                    <a href = "/Assets/documents/WILSON_DAVID_MONROY_RAMIREZ_HV.pdf" download = "WILSON_DAVID_MONROY_RAMIREZ_HV.pdf">
+                        <button class = "btn-cv">Descargar CV</button>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id = "perfil">
+                <div id = "perfil-profesional">
+                    <p id = "bienvenida">Bienvenido, soy</p>
+                    <h2 id = "nombre-completo">Wilson David<span id="apellidos"> Monroy Ramírez</span></h2>
+                    <p id = "estado">Desarrollador de Software Junior - Estudiante de Ingeniería de Software</p>
+                    <p id = "descripcion-personal">Soy un estudiante de la Fundación Universitaria Compensar, apasionado por construir soluciones de software facilitando tareas complejas. Me gusta seguir adquiriendo conocimiento en el campo, buscando nuevas herramientas fáciles de usar y comprensibles, combino fundamentos técnicos de programación con estética de diseño para soluciones agradables y optimas para el stakeholder o también conocidos como usuarios finales.</p>
+                    <div id = "botones">
+                        <form action="pages/proyectos.html">
+                            <button id = "btn-proyectos">Proyectos</button>
+                        </form>
+                        <form action="#footer-index">
+                            <button id="btn-contactar">Contactar</button>
+                        </form>
+                    </div>                
+                </div>
+                <div id = "perfil-img">
+                    <img src="Assets/Images/jpg/img_perfil_wilsonD.jpg" alt="Foto de perfil de Wilson David" id = "img-perfil" loading="lazy">
+                    <picture>
+                        <source media = "(min-width: 1024px)" srcset="Assets/Images/svg/logo-uCompensar.svg">
+
+                        <img src="Assets/Images/svg/logo-moviles-ucompensar.svg" alt="Logo Fundación Universitaria Compensar" id = "img-ucompensar" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+            <div>
+                <h3 class = "Subtitulos">Tech Stack:</h3>
+                <div id = "list-stacks">
+                    <div class="caja-stack">
+                        <img src="Assets/Images/png/java.png" alt="Logo de Java" loading="lazy">
+                        <legend id = "java">Java</legend>
+                    </div>
+                    <div class="caja-stack" id = "cajaSpringBoot">
+                        <img src="Assets/Images/svg/Spring_Boot.svg" alt="Logo de Spring Boot" loading="lazy">
+                        <legend id = "spring">Spring <span id = "boot">Boot</span></legend>
+                    </div>
+                    <div class="caja-stack">
+                        <img src="Assets/Images/svg/JavaScript.svg" alt="Logo de JavaScript" loading="lazy">
+                        <legend id = "js">JavaScript</legend>
+                    </div>
+                    <div class="caja-stack">
+                        <img src="Assets/Images/svg/HTML.svg" alt="Logo de HTML5" loading="lazy">
+                        <legend id = "html">HTML 5</legend>
+                    </div>
+                    <div class="caja-stack">
+                        <img src="Assets/Images/svg/CSS.svg" alt="Logo de CSS" loading="lazy">
+                        <legend id = "css">CSS</legend>
+                    </div>
+                    <div class="caja-stack">
+                        <img src="Assets/Images/png/HeidiSQL.png" alt="Logo de Heidi SQL" loading="lazy">
+                        <legend id = "heidisql">Heidi SQL</legend>
+                    </div>
+                    <div class="caja-stack">
+                        <img src="Assets/Images/webp/C_sharp.webp" alt="Logo de C#" loading="lazy">
+                        <legend id = "c-sharp">C#</legend>
+                    </div>
+                    <div class="caja-stack">
+                        <img src="Assets/Images/svg/Git.svg" alt="Logo de Git local" loading="lazy">
+                        <legend id = "git">Git</legend>
+                    </div>
+                    <div class="caja-stack">
+                        <img src="Assets/Images/svg/GitHub.svg" alt="Logo de GitHub" loading="lazy">
+                        <legend id = "github">GitHub</legend>
+                    </div>
+                    <div class="caja-stack">
+                        <img src="Assets/Images/png/xampp.png" alt="Logo de Xampp" id = "img-xampp" loading="lazy">
+                        <legend id = "xampp">Xampp</legend>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class = "Subtitulos">Conocimientos técnicos:</h3>
+                <div id = "container-conocimientos">
+                    <div class = "caja-conocimiento">
+                        <div class = "encabezados">
+                            <h5 class = "titulos-conocimientos">Fundamentos de software</h5>
+                            <img src="Assets/Images/png/programacion.png" alt="Icono de programación" class = "imgs-encabezado" loading="lazy">
+                        </div>
+                        <p class = "desc-conocimientos">Conocimientos en metodologias de desarrollo de software, utilizacion de diferentes entornos de desarrollo IDE, herramientas de planeación y ejecución como Trello e importancia de documentación.</p>
+                    </div>
+                    <div class = "caja-conocimiento">
+                        <div class = "encabezados">
+                            <h5 class = "titulos-conocimientos">Programación</h5>
+                            <img src="Assets/Images/png/computadores.png" alt="Icono de computadores" class = "imgs-encabezado" loading="lazy">
+                        </div>
+                        <p class = "desc-conocimientos">Conocimientos en programación sobre condicionales, ciclos, funciones, programación Orientada a Objetos, sentencias de decisión, arreglos, estructuras de datos simples, permanencia de datos con archivos, construcción de bases de datos, entre otros.</p>
+                    </div>
+                    <div class = "caja-conocimiento">
+                        <div class = "encabezados">
+                            <h5 class = "titulos-conocimientos">Programación web</h5>
+                            <img src="Assets/Images/webp/programacion_web.webp" alt="Icono de programación web" class = "imgs-encabezado" loading="lazy">
+                        </div>
+                        <p class="desc-conocimientos">Conocimientos en estructuración de páginas web con lenguaje de marcado HTML, estilización de páginas web con hoja de estilos CSS y manejo de funcionalidades y cambios de la página web con JavaScript, también un poco de manejo de APIs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class = "Subtitulos">Entornos de desarrollo IDE:</h3>
+                <div id = "ides-container">
+                    <div class = "caja-ides">
+                        <img src="Assets/Images/svg/Apache_NetBeans.svg" alt="Logo de Apache NetBeans IDE" loading="lazy">
+                        <p>Apache NetBeans(Java)</p>
+                    </div>
+                    <div class = "caja-ides">
+                        <img src="Assets/Images/svg/JetBrains_IntelliJ_IDEA.svg" alt="Logo de JetBrains IntelliJ IDEA" loading="lazy">
+                        <p>IntelliJ IDEA (Java)</p>
+                    </div>
+                    <div class = "caja-ides">
+                        <img src="Assets/Images/svg/VS_Code.svg" alt="Logo de Visual Studio Code" loading="lazy">
+                        <p>Visual Studio Code (Varios lenguajes)</p>
+                    </div>
+                    <div class = "caja-ides">
+                        <img src="Assets/Images/svg/Visual_Studio2022.svg" alt="Logo de JetBrains IntelliJ IDEA" loading="lazy">
+                        <p>Visual Studio (C#)</p>
+                    </div>        
+                </div>
+            </div>
+        </main>    
+        <footer id = "footer-index">
+            <div class = "logotipo">
+                <div class = "logo">
+                    <img src="Assets/Images/svg/IsologotipoDavid.svg" alt="Isologotipo de Wilson David Monroy" class = "isologotipo" loading="lazy">
+                </div>
+                <div class = "name-slogan">
+                    <h1 class = "name">WilsonM <span class = "resaltar-name">| dev</span></h1>
+                    <h5 class = "slogan">Web & Software Developer</h5>
+                </div>
+            </div>
+            <div class = "contactos">
+                <div>
+                    <h3 class = "tittle-contacto">Puedes contactarme en:</h3>
+                    <div class = "contacto-info">
+                        <a href = "tel:+573028436977" class = "caja-info">
+                            <h6 class = "tittle-caja-info">Teléfono:</h6>
+                            <p class = "info-contacto">(+57) 302 843 6977</p>
+                        </a>
+                        <a href = "mailto:wilsondmonroy@gmail.com" class = "caja-info">
+                            <h6 class = "tittle-caja-info">Correo electrónico:</h6>
+                            <p class = "info-contacto">wilsondmonroy@gmail.com</p>
+                        </a>
+                        <a href = "mailto:wdmonroy@ucompensar.edu.co" class = "caja-info">
+                            <h6 class = "tittle-caja-info">Correo Institucional:</h6>
+                            <p class = "info-contacto">wdmonroy@ucompensar.edu.co</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class = "derechos-container">
+                <p class = "info-derechos">&copy Wilson David Monroy Ramirez 2026. Todos los derechos reservados.</p>
+            </div>
+            <div class = "redes-sociales">
+                <h3 class = "tittle-contacto">Redes Sociales:</h3>
+                <div class = "container-redes">
+                    <a href="https://www.linkedin.com/in/wilsondmonroy" target="_blank" class = "caja-redes">
+                        <img src="Assets/Images/png/linkedIn_white.png" alt="LinkedIn" class = "iconos-redes" loading="lazy">
+                        <p class = "info-redes">www.linkedin.com/in/wilsondmonroy</p>
+                    </a>
+                    <a href="https://github.com/wilda1308" target="_blank" class = "caja-redes">
+                        <img src="Assets/Images/png/github.png" alt="GitHub" class = "iconos-redes" loading="lazy">
+                        <p class = "info-redes">WilsondMonroyDev</p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="JavaScript/script.js"></script>
+</html>

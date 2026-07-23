@@ -1,0 +1,209 @@
+
+main{
+    margin: 30px 20px;
+}
+
+h3.subtitulos{
+    color: #f8fafc;
+    font-family: "Poppins Bold", helvetica, verdana;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+div#perfil-profesional{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+p#descripcion-perfil{
+    font-size: 15px;
+    line-height: 1.4;
+    color: #ffffffBA;
+}
+
+#img-perfil{
+    height: 200px;
+}
+
+div#skills-container{
+    margin: 0px 10px 30px 30px;
+}
+
+ul#under-list-skills{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+}
+
+li.skill{
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    width: 157px;
+    border: 3px solid transparent;
+    border-radius: 46px;
+    padding: 10px 30px;
+    background: 
+        linear-gradient(#0a3c4c, #0a3c4c)padding-box,
+        linear-gradient(90deg, #3b82f6, #06b6d4) border-box; 
+}
+
+div#formaciones{
+    position: relative;
+    max-width: 100%;
+    margin: 55px 30px;
+}
+
+#formaciones::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: radial-gradient(circle at center, #3b82f6, #06b6d4);
+    border-radius: 20px;
+    top: -30px;
+    bottom: -30px;
+    left: -20px;
+}
+
+#formaciones li{
+    margin: 30px 0px 30px 30px;
+    list-style: outside;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+li .instituto{
+    color: #3b82f6;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.info-formacion{
+    margin: 20px 0px 20px 20px;
+}
+
+.caja-info-formacion{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+
+.caja-info-formacion .info-formacion p{
+    font-size: 15px;
+    line-height: 1.3;
+    color: #ffffffBA;
+}
+
+img.logo-instituto{
+    display: block;
+    height: 170px;
+    margin: auto;
+    filter: drop-shadow(0px 0px 10px #ffffff);
+}
+
+img#logoUcompensar{
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px #ffffff;
+}
+
+@media (min-width: 1024px) {
+    main{
+        margin: 68px 68px 40px;
+    }
+
+    h3.subtitulos{
+        font-size: 25pt;
+        margin-bottom: 25px;
+    }
+
+    div#perfil-profesional{
+        flex-direction: row;
+        margin-left: 30px;
+        gap: 2vw;
+    }
+
+    p#descripcion-perfil{
+        font-size: 20px;
+    }
+
+    #img-perfil{
+        height: 320px;
+        margin: 0px 5vw;
+    }
+
+    div#skills-container{
+        margin: 40px 4vw;
+    }
+
+    ul#under-list-skills{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    li.skill{
+        width: 15.5vw;
+        padding: 10px 30px;
+        font-size: 1.5vw;
+    }
+
+    div#formaciones{
+        margin: 70px 60px;
+    }
+
+    #formaciones::before{
+        width: 5px;
+        top: -35px;
+        bottom: -35px;
+        left: -20px;
+    }
+
+    #formaciones li{
+        margin: 40px 30px 30px 50px;
+        font-size: 20pt;
+    }
+
+    #formaciones ol{
+        padding: 0px 0px 0px 60px;
+    }
+
+    li .instituto{
+        font-size: 20pt;
+    }
+
+    .info-formacion{
+        margin: 50px 30px;
+    }
+
+    .caja-info-formacion{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        align-items: center;
+    }
+
+    .caja-info-formacion .info-formacion p{
+        font-size: 15pt;
+    }
+
+    img.logo-instituto{
+        height: 180px;
+        filter: drop-shadow(0px 0px 5px 10px #ffffff);
+        justify-self: center;
+    }
+
+    img#logoUcompensar{
+        box-shadow: 0px 0px 5px 10px #ffffff;
+    }
+}

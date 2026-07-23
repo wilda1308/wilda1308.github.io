@@ -1,0 +1,504 @@
+
+/* -------------------------------------------
+    Importación de fuentes
+--------------------------------------------*/
+
+@font-face{
+    font-family: "Poppins Bold";
+    src: url('../Assets/fonts/Poppins-Bold.ttf');
+}
+
+@font-face{
+    font-family: "Poppins";
+    src: url('../Assets/fonts/Poppins-Regular.ttf');
+}
+ 
+/*Estilos generales para reestablecer los estilos por defecto de los navegadores*/
+/* ---------------------------------------------------------------------------------
+    Estilos generales para reestablecer los estilos por defecto de los navegadores
+-----------------------------------------------------------------------------------------------*/
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+    line-height: 1.0;
+    letter-spacing: 0.0;
+}
+
+
+/* ------------------------------------------------------------------
+    Mantención del tamaño de todos los elementos de los documentos
+-------------------------------------------------------------------*/
+html{
+    width: 100%;
+    min-width: 320px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+/* -------------------------------------------
+    Estilos del fondo, tipografía y colores de texto de todas las páginas
+--------------------------------------------*/
+body{
+    background-color: #0b0f19;    
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Poppins", helvetica, verdana;
+    color: #f8fafc;
+}
+
+p, li, span, a{
+    font-family: 'Roboto', sans-serif;
+    color: #f8fafc;
+}
+
+
+/* -------------------------------------------
+    Estilos de header de todas las páginas
+--------------------------------------------*/
+
+header{
+    margin: 20px 4vw;
+    border-bottom: 1.5pt solid #3b82f6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 20px 0;
+    animation: aparecer_encabezado 0.3s ease-in-out normal forwards;
+}
+
+@keyframes aparecer_encabezado {
+    0%{
+        transform: translateY(-50%);
+        opacity: 30%;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+
+/*Estilos del isologotipo nombre y slogan*/
+
+.logotipo{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5vw;
+    justify-content: center;
+    z-index: 0;
+    background-color: #0b0f19;
+}
+
+.isologotipo{
+    width: 14vw;
+    height: auto;
+}
+
+.name{
+    color: #f8fafc;
+    font-family: "Poppins Bold", helvetica, verdana;
+    font-size: 7vw;
+}
+
+.resaltar-name{
+    background: linear-gradient(90deg, #3b82f6, #06b6d4);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Poppins", helvetica, verdana;
+    font-size: 7vw;
+}
+
+.slogan{
+    color: #94a3b8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vw;
+    margin-left: 7px;
+}
+
+/*Estilos de navegación del sitio*/
+
+nav.ocultar-menu{
+    animation: desaparecer-menu 0.3s ease-in-out normal forwards;
+    visibility: hidden;
+    display: none;
+}
+
+@keyframes desaparecer-menu {
+    0%{
+        z-index: 1;
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+    100%{
+        z-index: -1;
+        transform: translateY(-70%);
+        opacity: 100%;
+    }
+}
+
+nav.mostrar-menu{
+    visibility: visible;
+    display: block;
+    animation: aparecer-menu 0.6s ease-out normal forwards;
+}
+
+@keyframes aparecer-menu {
+    0%{
+        z-index: -1;
+        transform: translateY(-70%);
+        opacity: 0;
+    }
+    100%{
+        z-index: 1;
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+
+#btn-abrir-menu{
+    width: 34.3px;
+    height: 16.9px;
+    background-image: url('../Assets/Images/svg/Boton_menu.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    visibility: visible;
+    cursor: pointer;
+    
+}
+
+div#btn-abrir-menu.girarmitadboton{
+    animation: girarMitad 0.6s ease-in-out alternate forwards;
+}
+
+@keyframes girarMitad {
+    0%{
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: scaleX(0.7);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+div#btn-abrir-menu.girarboton{
+    animation: girar 0.25s ease-in alternate forwards;
+}
+
+@keyframes girar {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: scaleX(0.7);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+nav ul.menu{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+ul.menu li{
+    list-style: none;
+    padding: 1vh 2.4vw;
+}
+
+ul.menu li a{
+    color: #f8fafc;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+#estado_act{
+    animation: menu-activo 1s ease-in forwards, combinarcolores 1s ease-in-out infinite alternate-reverse;
+    text-transform: uppercase;
+}
+
+@keyframes menu-activo {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes combinarcolores {
+    0%{
+        color: #06b6d4;
+        text-shadow: 0px 0px 10px #06b6d4;
+    }
+    100%{
+        color: #3b82f6;
+        text-shadow: 0px 0px 10px #3b82f6;
+    }
+}
+
+.btn-cv{
+    background-color: #06b6d4;
+    border-radius: 46px;
+    padding: 12px 27px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color:#f8fafc;
+}
+
+
+/*----------------------------------------------------------------------------
+                Estilos para el pie de pagina (contacto)
+------------------------------------------------------------------------------*/
+
+footer{
+    margin: 20px 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 0;
+    border-top: 1.5pt solid #3b82f6;
+    
+}
+
+footer .logotipo{
+    justify-content: center;
+}
+
+.tittle-contacto{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #3b82f6;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.contacto-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.caja-info{
+    text-align: center;
+    background-color: #1e293b;
+    border-radius: 12px;
+    padding: 10px 20px; 
+}
+
+.tittle-caja-info{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #f8fafc;
+    margin-bottom: 7px;
+    font-weight: bolder;
+}
+
+.info-contacto{
+    font-family: 'Roboto', sans-serif;
+    font-size: 8.5px;
+    color: rgba(248, 250, 252, 0.73);
+}
+
+p.info-derechos{
+    font-family: 'Roboto', sans-serif;
+    font-size: 8.5px;
+    color: rgba(248, 250, 252, 0.73);
+    text-align: center;
+    align-self: center;
+}
+
+.container-redes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.caja-redes{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #1e293b;
+    border-radius: 14px;
+    padding: 10px 20px;
+}
+
+p.info-redes{
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px;
+    color: rgba(248, 250, 252, 0.73);
+}
+
+.iconos-redes{
+    height: 25px;
+}
+
+@media (min-width: 1024px){
+
+    header{
+        margin: 20px;
+        border-bottom: 3pt solid #3b82f6;
+        display: grid;
+        grid-template-columns: 29vw auto;
+        align-items: center;
+        padding: 25px;
+    }
+    
+    .logotipo{
+        display: grid;
+        grid-template-columns: 90px auto;
+        align-items: center;
+        column-gap: .2vw;
+        justify-content: left;
+    }
+
+    .isologotipo{
+        width: 4.68vw;
+        height: auto;
+    }
+
+    .name{
+        font-size: 2.47vw;
+    }
+    .resaltar-name{
+        font-size: 2.47vw;
+    }
+
+    .slogan{
+        font-size: 0.95vw;
+        margin-left: 7px;
+    }
+
+    nav.ocultar-menu{
+        animation: none;
+    }
+
+    nav#menu-nav{
+        visibility: visible;
+        display: block;
+    }
+
+    nav ul.menu{
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        column-gap: 0.2vw;
+        align-items: center;
+        justify-content: right;
+    }
+
+    ul.menu li{
+        width: 100%;
+    }
+
+    ul.menu li a{
+        padding: 2vh 0.5vw;
+        font-size: 1.27vw;
+    }
+
+    div#btn-abrir-menu{
+        visibility: hidden;
+        display: none;
+    }
+
+    .btn-cv{
+        font-size: 1.27vw;
+        padding: 12px 24px;
+        margin-left: 1vw;
+    }
+
+    .btn-cv:hover{
+        cursor: pointer;
+    }
+
+    /*FOOTER*/
+    footer{
+        margin: 20px;
+        border-top: 3pt solid #3b82f6;
+        padding: 25px;
+        display: grid;
+        grid-template-columns: .7fr 1fr;
+        row-gap: 30px;
+    }
+
+    footer .logotipo{
+        justify-content: center;
+    }
+
+    .tittle-contacto{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .contacto-info{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 26px;
+    }
+
+    .caja-info{
+        text-align: center;
+        background-color: #1e293b;
+        border-radius: 14px;
+        padding: 25px 20px; 
+    }
+    
+    button.caja-info:hover{
+        cursor: pointer;
+    }
+
+    .tittle-caja-info{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .info-contacto{
+        font-size: 13px;
+    }
+
+    p.info-derechos{
+        font-size: 13px;
+        text-align: center;
+        align-self: center;
+    }
+
+    .container-redes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 26px;
+        padding: 0px 70px;
+    }
+
+    .caja-redes{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 30px;
+    }
+    p.info-redes{
+        font-size: 11px;
+    }
+
+    .iconos-redes{
+        height: 35px;
+    }
+
+}

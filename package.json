@@ -1,0 +1,25 @@
+{
+  "name": "wilda1308.github.io",
+  "version": "1.0.0",
+  "description": "Proyecto de portafolio personal, donde destaco lo más relevante de mis conocimientos, logros, metas y proyectos más ambiciosos de mi carrera profesional. Actualmente soy estudiante de Ingeniería de Software de la Fundación Universitaria Compensar y próximo a graduarme de Técnico Profesional en Programación de Aplicaciones de Software.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilda1308/wilda1308.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/wilda1308/wilda1308.github.io/issues"
+  },
+  "homepage": "https://github.com/wilda1308/wilda1308.github.io#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

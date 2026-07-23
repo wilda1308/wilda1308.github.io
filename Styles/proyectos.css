@@ -1,0 +1,526 @@
+main{
+    margin: 30px 25px;
+}
+
+div#encabezado-proyectos{
+    display: block;
+}
+
+p#btn-collapse{
+    font-size: 12px;
+    color: #06b6d4;
+    text-decoration: underline;
+    margin-top: 30px;
+}
+
+p#info_pag{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #3b82f6;
+}
+
+h3#titulo_pag{
+    font-family: "Poppins Bold", helvetica, verdana;
+    font-size: 25px;
+}
+
+div#container-proyectos{
+    margin: 25px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+details.box-proyecto{
+    background: #1e293b;
+    border: 3px solid #3b82f6;
+    border-radius: 30px;
+}
+
+img.icon-proyecto{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 3px solid #3b82f6;
+}
+
+img#icono-calculator, img#icono-sistema-ventas, img#icono-safemoney{
+    background: #ffffff;
+}
+
+img#icon-kickData{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    background: #0f172a;
+}
+
+summary.header-proyecto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    padding: 15px;
+}
+
+div.resumen h5{
+    font-family: "Poppins Bold", helvetica, verdana;
+    font-size: 20px;
+}
+
+div.resumen p{
+    font-size: 16px;
+    color: #ffffffBA;
+}
+
+div.estado{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border: 4px solid #00964e;
+    border-radius: 50px;
+    padding: 5px 18px;
+    background: rgba(0, 150, 78, .17);
+}
+
+div.estado img{
+    width: 20px;
+    padding: 5px;
+    border: 4px solid #00964e;
+    border-radius: 50%;
+}
+
+div.estado p{
+    font-family: "Poppins Bold", helvetica, verdana;
+    font-size: 15px;
+}
+
+img#flecha{
+    width: 30px;
+}
+
+
+img.details-cerrado{
+    animation: voltearFlecha180 .25s ease-out forwards;
+}
+
+@keyframes voltearFlecha360 {
+    0%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes voltearFlecha180 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+img.details-abierto{
+    animation: voltearFlecha360 .25s ease-out forwards;
+}
+
+div.contenido-proyecto{
+    padding: 30px 6vw; 
+    border-top: 2.8px solid #3b82f6;
+}
+
+div.contenido-proyecto h6{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #3b82f6;
+}
+
+div.contenido-proyecto p{
+    font-size: 16px;
+    color: #ffffffBA;
+    margin-bottom: 15px;
+}
+
+div.contenido-add-proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 10px;
+    gap: 10px;
+}
+
+div.aplicado, div.acciones{
+    min-width: 240px;
+    max-width: 350px;
+}
+
+div.herramientas{
+    margin: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+}
+
+div.herramientas p, div.herramientas a{
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 4px 15px;
+    border-radius: 50px;
+    width: 96px;
+}
+
+p#gdevelop{
+    background: #5900ff;
+}
+
+p#pixilart{
+    background: #ff305d;
+}
+
+a#itchio{
+    background: #fa5c5c;
+    padding: 4px 15px;
+}
+
+p.c-sharp{
+    background: #5900ff;
+}
+
+p.visual-studio{
+    background: #642f93;
+}
+
+a.github, p#vercel, p#render{
+    background: #ffffff;
+
+}
+
+p.html{
+    background: #f64e29;
+}
+
+p.css{
+    background: #5900ff;
+}
+
+p.js{
+    background: #ffde59;
+}
+
+p.vscode{
+    background: #004aad;
+}
+
+p.java{
+    background: #bb0000;
+}
+
+p.netBeans{
+    background: #1b6ac6;
+}
+
+p#springboot{
+    background: #00964e;
+}
+
+p#neontech{
+    background: linear-gradient(90deg, #0097b2 ,#7ed957);
+}
+
+p#intellijidea{
+    background: #000000;
+}
+
+div.herramientas a.negro, div.herramientas p.negro{
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+div.container-ver-proyecto{
+    margin: 10px;
+    display: block;
+    aspect-ratio: 3.15/2;
+    text-align: center;
+}
+
+div.container-ver-proyecto-web{
+    width: 100%;
+    max-width: 1080px;
+    aspect-ratio: 1280 / 656;
+    margin: 0 auto;
+    overflow: hidden;
+    container-type: inline-size;
+}
+
+div#container-ver-proyecto-sistema{
+    margin: 10px 10px 0px;
+    display: block;
+    aspect-ratio: 2.9/2;
+    height: 22.5vh;
+}
+
+div#container-ver-proyecto-safemoney{
+    margin: 10px 10px 0px;
+    display: block;
+    aspect-ratio: 3/1.8;
+    height: 20vh;
+}
+
+iframe#pantalla-juego{
+    width: 100%;
+    max-width: 720px;
+    height: 100%;
+    aspect-ratio: 3.15/2;
+}
+
+img.pantalla-preview{
+    width: 100%;
+    max-width: 720px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+iframe.pantalla-preview{
+    width: 1300px;
+    height: auto;
+    aspect-ratio: 1280 / 656;
+    transform-origin: top left;
+    transform: scale(calc(100cqw / 1300px));
+}
+
+iframe#pantalla-preview-jjconsulting{
+    width: 1550px;
+    aspect-ratio: 1280 / 656;
+    transform: scale(calc(100cqw / 1550px));
+}
+
+div.container-btn-ver-proyecto{
+    display: flex;
+}
+
+a.btn-ver-proyecto{
+    border: 3px solid #06b6d4;
+    background: #ffffff;
+    color: #06b6d4;
+    margin: 15px auto 5px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+a.btn-ver-proyecto:hover{
+    box-shadow: 0px 0px 10px 5px #06b6d4;
+}
+
+
+@media (min-width: 1024px) {
+    main{
+        margin: 50px 60px;
+    }
+
+    div#encabezado-proyectos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    p#btn-collapse{
+        font-size: 17px;
+        margin-top: 0px;
+        margin-right: 20px;
+    }
+
+    p#btn-collapse:hover{
+        color: #3b82f6;
+        cursor: pointer;
+    }
+
+    p#info_pag{
+        font-size: 25px;
+        line-height: 1.4;
+    }
+
+    h3#titulo_pag{
+        font-size: 30px;
+        line-height: 1.4;
+    }
+
+    div#container-proyectos{
+        margin: 50px 10px;
+        gap: 30px;
+    }
+
+    details.box-proyecto{
+        border: 4px solid #3b82f6;
+    }
+
+    details.box-proyecto:hover{
+        box-shadow: 0px 0px 5px 5px #3b82f6;
+    }
+
+    img.icon-proyecto{
+        width: 100px;
+        height: 100px;
+        border: 4px solid #3b82f6;
+        justify-self: center;
+    }
+
+    img#icon-kickData{
+        width: 80px;
+        height: 80px;
+    }
+
+    summary.header-proyecto{
+        display: grid;
+        grid-template-columns: 1.5fr 3fr 2fr .8fr;
+        gap: 15px;
+        padding: 30px;
+    }
+
+    div.resumen h5{
+        font-size: 25px;
+        line-height: 1.6;
+    }
+
+    div.resumen p{
+        font-size: 21px;
+        line-height: 1.6;
+    }
+
+    div.estado{
+        flex-wrap: nowrap;
+        width: 200px;
+        gap: 20px;
+        padding: 10px 23px;
+    }
+
+    div.estado img{
+        width: 35px;
+        border: 4px solid #00964e;
+    }
+
+    div.estado p{
+        font-size: 20px;
+    }
+
+    img#flecha{
+        width: 40px;
+        justify-self: center;
+        opacity: 60%;
+    }
+
+    img#flecha.flecha-hover{
+        cursor: pointer;
+        transform: scale(1.15);
+        opacity: 100%;
+    }
+
+    div.contenido-proyecto{
+        padding: 50px 5.5vw; 
+        border-top: 3.8px solid #3b82f6;
+    }
+
+    div.contenido-proyecto h6{
+        margin-bottom: 15px;
+        font-size: 21px;
+    }
+
+    div.contenido-proyecto p{
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+
+    div.contenido-add-proyectos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px 20px 20px 20px;
+    }
+
+    div.aplicado, div.acciones{
+        min-width: 300px;
+        max-width: 600px;
+    }
+
+    div.herramientas{
+        margin: 40px 30px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 21px;
+        row-gap: 10px;
+    }
+
+    div.herramientas p, div.herramientas a{
+        margin-bottom: 0px;
+        font-size: 21px;
+        color: #ffffff;
+        padding: 9px 20px;
+        width: 164px;
+    }
+
+    a#itchio{
+        padding: 9px 20px;
+    }
+
+    div.herramientas a.negro, div.herramientas p.negro{
+        font-size: 21px;
+    }
+
+    div.container-ver-proyecto{
+        display: block;
+        width: 100%;
+        max-width: 1080px;
+        aspect-ratio: 16/9;
+        margin: 0px auto;
+        overflow: hidden;
+    }
+
+    div#container-ver-proyecto-sistema{
+        display: block;
+        width: 100%;
+        max-width: 1080px;
+        height: 65vh;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    div#container-ver-proyecto-safemoney{
+        display: block;
+        width: 100%;
+        max-width: 1080px;
+        height: 55vh;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    iframe#pantalla-juego{
+        width: 920px;
+        max-width: 1280px;
+        height: auto;
+        aspect-ratio: 16/9.32;
+    }
+
+    img.pantalla-preview{
+        width: 720px;
+        max-width: 1280px;
+        height: auto;
+    }
+
+    a.btn-ver-proyecto{
+        padding: 20px 30px;
+        font-size: 21px;
+    }
+}
