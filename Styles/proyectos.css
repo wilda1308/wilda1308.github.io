@@ -417,13 +417,13 @@ a.btn-ver-proyecto:hover{
         font-size: 20px;
     }
 
-    img#flecha{
+    img.flecha{
         width: 40px;
         justify-self: center;
         opacity: 60%;
     }
 
-    img#flecha.flecha-hover{
+    img.flecha.flecha-hover{
         cursor: pointer;
         transform: scale(1.15);
         opacity: 100%;
