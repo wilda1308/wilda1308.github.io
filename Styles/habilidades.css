@@ -98,6 +98,12 @@ div#container-hab-personales li{
     border-radius: 100px;
 }
 
+@media (min-width: 720px) {
+    div#container-hab-personales{
+        gap: 2vw;
+    }
+}
+
 @media (min-width: 1024px) {
     main{
         margin: 40px 50px;

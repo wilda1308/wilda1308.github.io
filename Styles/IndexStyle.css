@@ -249,6 +249,132 @@ p.desc-conocimientos{
     margin-left: 20px;
 }
 
+@media (min-width: 720px) {
+    main{
+        margin: 50px 6vw;
+    }
+
+    div#perfil{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    p#bienvenida{
+        font-size: 2.8vw;
+    }
+
+    h2#nombre-completo{
+        font-size: 4.5vw;
+    }
+
+    p#estado{
+        font-size: 2.2vw;
+        margin-top: 10px;
+    }
+
+    p#descripcion-personal{
+        font-size: 2.2vw;
+    }
+
+    button#btn-proyectos{
+        padding: 13px 26px;
+        font-size: 2.2vw;
+    }
+
+    button#btn-contactar{
+        padding: 13px 26px;
+        font-size: 2.2vw;
+    }
+
+    img#img-perfil{
+        width: 30vw;
+        border: 3.5px solid #3b82f6;
+        box-shadow: 0px 0px 10px 5px #3b82f6;
+    }
+
+    #img-ucompensar{
+        width: 30vw;
+        top: -25px;
+        box-shadow: 0px 0px 10px 8px #3b82f6;
+        margin-bottom: 0;
+    }
+
+    h3.Subtitulos{
+        font-size: 3.5vw;
+    }
+
+    div#list-stacks{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        align-items: baseline;
+        margin: 20px;
+        margin-bottom: 40px;
+    }
+
+    .caja-stack img{
+        display: block;
+        height: 50px;
+        margin: auto;
+    }
+
+    .caja-stack legend, legend span{
+        font-size: 2.5vw;
+        margin-top: 9px;
+    }
+
+    div#container-conocimientos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin: 30px 20px;
+    }
+
+    div.caja-conocimiento{
+        padding: 20px;
+        background-color: #1e293b;
+        border-radius: 15px;
+    }
+
+    div.encabezados{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 28px 10px 5px;
+    }
+
+    h5.titulos-conocimientos{
+        font-size: 2.5vw;
+        width: 50%;
+    }
+
+    .encabezados .imgs-encabezado{
+        height: 55px;
+    }
+
+    p.desc-conocimientos{
+        font-size: 2.15vw;
+    }
+
+    #ides-container{
+        margin: 20px;
+        gap: 15px;
+    }
+
+    .caja-ides img{
+        width: 10vw;
+        padding: 2.2vw;
+        border-radius: 15px;
+    }
+
+    .caja-ides p{
+        font-size: 2.3vw;
+    }
+}
+
 @media (min-width: 1024px) {
 
     main{

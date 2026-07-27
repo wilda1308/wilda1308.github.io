@@ -1,3 +1,7 @@
+:root{
+    interpolate-size: allow-keywords;
+}
+
 main{
     margin: 30px 25px;
 }
@@ -62,6 +66,18 @@ summary.header-proyecto{
     gap: 10px;
     align-items: center;
     padding: 15px;
+}
+
+details::details-content{
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: height 0.6s ease, opacity 0.6s ease, content-visibility 0.6s allow-discrete;
+}
+
+details[open]::details-content{
+    height: auto;
+    opacity: 1;
 }
 
 div.resumen h5{
@@ -323,6 +339,124 @@ a.btn-ver-proyecto:hover{
     box-shadow: 0px 0px 10px 5px #06b6d4;
 }
 
+@media (min-width: 720px) {
+    main{
+        margin: 3vh 5vw;
+    }
+
+    div#encabezado-proyectos{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    p#btn-collapse{
+        font-size: 13px;
+        margin-right: 30px;
+    }
+
+    p#info_pag{
+        font-size: 22px;
+    }
+
+    h3#titulo_pag{
+        font-size: 27px;
+    }
+
+    div#container-proyectos{
+        margin: 25px 5px;
+    }
+
+    details.box-proyecto{
+        border: 3.5px solid #3b82f6;
+    }
+
+    img.icon-proyecto{
+        width: 72px;
+        height: 72px;
+        border: 3.5px solid #3b82f6;
+    }
+
+    img#icon-kickData{
+        width: 55px;
+        height: 55px;
+        padding: 7px;
+    }
+
+    summary.header-proyecto{
+        display: grid;
+        grid-template-columns: 80px 28vw 200px 30px;
+        gap: 15px;
+    }
+
+    div.resumen h5{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    div.resumen p{
+        font-size: 14px;
+    }
+
+    div.estado{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 12px;
+        border: 3.5px solid #00964e;
+        padding: 5px 14px;
+    }
+
+    div.estado img{
+        width: 19px;
+        padding: 5px;
+        border: 3.2px solid #00964e;
+    }
+
+    div.estado p{
+        font-size: 13px;
+    }
+
+    img.flecha{
+        width: 28px;
+    }
+    
+    div.contenido-proyecto{ 
+        border-top: 3.8px solid #3b82f6;
+    }
+
+    div.aplicado, div.acciones{
+        min-width: 300px;
+        max-width: 450px;
+    }
+
+    div.herramientas{
+        margin: 15px 10px;
+        gap: 15px;
+    }
+
+
+    div#container-ver-proyecto-sistema{
+        margin: 10px 10px 0px;
+        display: block;
+        aspect-ratio: 3/2;
+        height: 35vh;
+    }
+
+    div#container-ver-proyecto-safemoney{
+        margin: 10px 10px 0px;
+        display: block;
+        aspect-ratio: 3/1.8;
+        height: 33.5vh;
+    }
+
+    img.pantalla-preview{
+        width: 100%;
+        max-width: 900px;
+    }
+
+    a.btn-ver-proyecto{
+        padding: 5px 20px;
+    }
+}
 
 @media (min-width: 1024px) {
     main{

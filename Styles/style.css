@@ -107,10 +107,24 @@ header{
     font-size: 7vw;
 }
 
+h1#nombre-slogan{
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        escritura 2s ease-in-out forwards;
+}
+
+@keyframes escritura {
+    to{
+        width: 11ch;
+    }
+}
+
 .resaltar-name{
     background: linear-gradient(90deg, #3b82f6, #06b6d4);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
+    -webkit-background-clip: text;
     font-family: "Poppins", helvetica, verdana;
     font-size: 7vw;
 }
@@ -352,6 +366,123 @@ p.info-redes{
     height: 25px;
 }
 
+@media (min-width: 720px) {
+    html{
+        min-width: 720px;
+    }
+
+    header{
+        margin: 22px 4.2vw;
+        border-bottom: 1.5pt solid #3b82f6;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 20px 0;
+        animation: aparecer_encabezado 0.3s ease-in-out normal forwards;
+    }
+
+    @keyframes aparecer_encabezado {
+        0%{
+            transform: translateY(-50%);
+            opacity: 30%;
+        }
+        100%{
+            transform: translateY(0%);
+            opacity: 100%;
+        }
+    }
+
+    .isologotipo{
+        width: 12vw;
+    }
+
+    .name{
+        color: #f8fafc;
+        font-family: "Poppins Bold", helvetica, verdana;
+        font-size: 6vw;
+    }
+
+    .resaltar-name{
+        font-size: 6vw;
+    }
+
+    .slogan{
+        font-size: 2.5vw;
+        margin-left: 7.2px;
+    }
+
+    #btn-abrir-menu{
+        width: 50px;
+        height: 27px;
+        background-size: 120%;   
+    }
+    ul.menu li a{
+        font-size: 2vw;
+    }
+
+    .btn-cv{
+        font-size: 2vw;
+    }
+
+    footer{
+        flex-wrap: wrap;       
+    }
+
+    .tittle-contacto{
+        font-size: 2.3vw;
+        margin-bottom: 11px;
+    }
+
+    .contacto-info{
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .caja-info{
+        border-radius: 9px;
+        padding: 12px 20px; 
+    }
+
+    .tittle-caja-info{
+        font-size: 2.2vw;
+        margin-bottom: 8px;
+    }
+
+    .info-contacto{
+        font-size: 2vw;
+    }
+
+    p.info-derechos{
+        font-size: 2vw;
+        margin-bottom: 20px;
+    }
+
+    .container-redes{
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .caja-redes{
+        gap: 13px;
+        border-radius: 9px;
+        width: 37vw;
+        padding: 12px 20px;
+    }
+
+    p.info-redes{
+        font-size: 1.9vw;
+    }
+
+    .iconos-redes{
+        height: 4vw;
+    }
+
+}
+
 @media (min-width: 1024px){
 
     header{
@@ -492,6 +623,7 @@ p.info-redes{
         align-items: center;
         gap: 10px;
         padding: 20px 30px;
+        width: 250px;
     }
     p.info-redes{
         font-size: 11px;

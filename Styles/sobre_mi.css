@@ -119,6 +119,74 @@ img#logoUcompensar{
     box-shadow: 0px 0px 10px #ffffff;
 }
 
+@media (min-width: 710px) {
+    main{
+        margin: 30px 6vw;
+    }
+
+    h3.subtitulos{
+        font-size: 3.4vw;
+    }
+
+    div#perfil-profesional{
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    p#descripcion-perfil{
+        font-size: 2.2vw;
+    }
+
+    #img-perfil{
+        height: 35vw;
+    }
+
+    div#skills-container{
+        margin: 0px 10px 30px 30px;
+    }
+
+    ul#under-list-skills{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    li.skill{
+        font-size: 2.25vw;
+    }
+
+    div#formaciones{
+        margin: 55px 6vw;
+    }
+
+    #formaciones li{
+        margin: 30px 0px 30px 6vw;
+        font-size: 3vw;
+    }
+
+    li .instituto{
+        font-size: 3vw;
+    }
+
+    .info-formacion{
+        margin: 20px 0px 20px 4vw
+    }
+
+    .caja-info-formacion .info-formacion p{
+        font-size: 2.2vw;
+    }
+
+    img.logo-instituto{
+        height: 26vw;
+        filter: drop-shadow(0px 0px 7px #ffffff);
+    }
+
+    img#logoUcompensar{
+        border-radius: 29px;
+        box-shadow: 0px 0px 7px #ffffff;
+    }
+}
+
 @media (min-width: 1024px) {
     main{
         margin: 68px 68px 40px;
